@@ -3,7 +3,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_freezed_test/domain/my_home/my_home_notifier.dart';
 import 'package:riverpod_freezed_test/domain/my_home/my_home_state.dart';
 
-class MyHomePage extends HookConsumerWidget {
+class MyHomePage extends ConsumerWidget {
   const MyHomePage({super.key, required this.title});
 
   final String title;
