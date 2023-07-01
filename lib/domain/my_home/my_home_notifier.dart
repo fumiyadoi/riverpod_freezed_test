@@ -15,7 +15,7 @@ class MyHomeNoifier extends StateNotifier<MyHomeState> {
 
   final MyHomeService _myHomeService;
 
-  Future<void> increment() async {
+  void increment() {
     final counter = state.counter;
     final newCounter = _myHomeService.increment(counter);
     state = state.copyWith(counter: newCounter);
