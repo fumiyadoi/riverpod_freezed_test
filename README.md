@@ -1,6 +1,6 @@
 # riverpod_freezed_test
 
-A new Flutter project.
+Flutter sample code refactored using Domain-Driven Design, Riverpod, and Freezed
 
 ## Getting Started
 
