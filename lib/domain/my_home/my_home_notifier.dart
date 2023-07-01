@@ -1,7 +1,6 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_freezed_test/domain/my_home/my_home_service.dart';
 import 'package:riverpod_freezed_test/domain/my_home/my_home_state.dart';
-import 'package:riverpod_freezed_test/infrastructure/model/counter/counter.dart';
 
 final myHomeStateNotifierProvider = StateNotifierProvider.autoDispose<MyHomeNoifier, MyHomeState>((ref) {
   return MyHomeNoifier(
@@ -18,7 +17,7 @@ class MyHomeNoifier extends StateNotifier<MyHomeState> {
 
   Future<void> increment() async {
     final counter = state.counter;
-    final newCounter = Counter(value: _myHomeService.increment(counter.value));
+    final newCounter = _myHomeService.increment(counter);
     state = state.copyWith(counter: newCounter);
   }
 }
