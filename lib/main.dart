@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:riverpod_freezed_test/presentation/my_home_page.dart';
+import 'package:riverpod_freezed_test/presentation/my_home/my_home_page.dart';
 
 class Initialize {
   Future<void> initRunApp() async {

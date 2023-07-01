@@ -1,7 +1,7 @@
-import 'package:riverpod/riverpod.dart';
-import 'package:riverpod_freezed_test/domain/my_home_service.dart';
-import 'package:riverpod_freezed_test/domain/my_home_state.dart';
-import 'package:riverpod_freezed_test/infrastructure/model/counter.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:riverpod_freezed_test/domain/my_home/my_home_service.dart';
+import 'package:riverpod_freezed_test/domain/my_home/my_home_state.dart';
+import 'package:riverpod_freezed_test/infrastructure/model/counter/counter.dart';
 
 final myHomeStateNotifierProvider = StateNotifierProvider.autoDispose<MyHomeNoifier, MyHomeState>((ref) {
   return MyHomeNoifier(

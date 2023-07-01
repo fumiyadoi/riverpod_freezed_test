@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:riverpod_freezed_test/infrastructure/model/counter.dart';
+import 'package:riverpod_freezed_test/infrastructure/model/counter/counter.dart';
 
 part 'my_home_state.freezed.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:riverpod_freezed_test/domain/my_home_notifier.dart';
-import 'package:riverpod_freezed_test/domain/my_home_state.dart';
+import 'package:riverpod_freezed_test/domain/my_home/my_home_notifier.dart';
+import 'package:riverpod_freezed_test/domain/my_home/my_home_state.dart';
 
 class MyHomePage extends HookConsumerWidget {
   const MyHomePage({super.key, required this.title});
